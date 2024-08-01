@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:text="Fit Life"
+        android:textColor="@color/white"
+        android:layout_marginBottom="32dp"
+        android:textSize="64sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:text="Hayatı daha iyi hale getir"
+        android:layout_marginTop="62dp"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:fontFamily="sans-serif"
+        android:text="Başla"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="62dp"
+        android:textColor="@color/white"
+        android:paddingVertical="32dp"
+        android:paddingHorizontal="64dp"
+        android:textSize="22sp" />
+
+
+
+</FrameLayout>

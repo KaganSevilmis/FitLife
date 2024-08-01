@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".activity.SetCalActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Kalori Hedefi"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="Günlük kalori ihtiyacı, bireyin yaşına, cinsiyetine, kilosuna, aktivite düzeyine ve genetik faktörlere bağlı olarak değişiklik gösterir. Temel enerji ihtiyacını belirlemek için Harris-Benedict denklemleri sıkça kullanılır. Ortalama bir yetişkin kadının günlük kalori ihtiyacı yaklaşık olarak 1,800-2,400 kalori arasında değişirken, erkekler için bu aralık 2,200-3,000 kaloridir. Ancak, kişinin hedefleri, metabolizması ve yaşam tarzı da hesaba katılmalıdır. Sağlıklı bir kilo kontrolü için enerji alımı ve harcaması arasında denge kurmak önemlidir. Beslenme uzmanları, kişiselleştirilmiş bir beslenme planı oluşturmak için bireyin özel ihtiyaçlarını değerlendirir ve sağlıklı bir yaşam tarzına yönlendirmek adına kalori alımını dengede tutmayı önerir"
+        android:textColor="#ADADAD"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/etCalTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_bg"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:hint="Günlük Kalori Hedefiniz..."
+            android:inputType="number"
+            android:paddingVertical="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="#797979"
+            android:textSize="18sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardBackgroundColor="#579B4B"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingVertical="16dp"
+                android:text="Kaydet"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
